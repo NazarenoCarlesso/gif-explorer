@@ -1,17 +1,20 @@
 import { useEffect, useState } from 'react'
 import getGifs from '../hooks/getGifs'
+import GifItem from './GifItem'
 
 const GifGrid = ({ category }) => {
-  const [images, setImages] = useState()
+  const [gifs, setGifs] = useState([])
 
   useEffect(() => {
-    getGifs().then(gifs => setImages(gifs))
+    getGifs(category).then(g => setGifs(g))
   }, [])
 
   return (
     <>
       <h3>{category}</h3>
-      {JSON.stringify(images)}
+      <div className='card-grid'>
+        {gifs.map(gif => <GifItem key={gif.id} {...gif} />)}
+      </div>
     </>
   )
 }
