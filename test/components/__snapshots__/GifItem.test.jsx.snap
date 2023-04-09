@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifItem /> should match with snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Dragon Ball Ultra Instinct GIF"
+      src="https://media2.giphy.com/media/19JSJ5ucu91R5D7a3w/giphy.gif?cid=b112ed82qn0pe3ma98puryu7iwn63w4eogbyoxq81m77kktt&rid=giphy.gif&ct=g"
+    />
+    <h4>
+      Dragon Ball Ultra Instinct GIF
+    </h4>
+  </div>
+</div>
+`;
+
+exports[`Test <GifItem /> should match with snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Dragon Ball Ultra Instinct GIF"
+      src="https://media2.giphy.com/media/19JSJ5ucu91R5D7a3w/giphy.gif?cid=b112ed82qn0pe3ma98puryu7iwn63w4eogbyoxq81m77kktt&rid=giphy.gif&ct=g"
+    />
+    <h4>
+      Dragon Ball Ultra Instinct GIF
+    </h4>
+  </div>
+</div>
+`;

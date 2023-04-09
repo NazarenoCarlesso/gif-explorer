@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
 const Search = ({ onAddCategory }) => {
   const [input, setInput] = useState('')
@@ -17,7 +18,7 @@ const Search = ({ onAddCategory }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} aria-label='form'>
       <input
         type='text'
         placeholder='One Punch, Dragon Ball, Demon Slayer...'
@@ -26,6 +27,10 @@ const Search = ({ onAddCategory }) => {
       />
     </form>
   )
+}
+
+Search.propTypes = {
+  onAddCategory: PropTypes.func.isRequired
 }
 
 export default Search
