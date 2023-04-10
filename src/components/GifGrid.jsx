@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import useGifs from '../hooks/useGifs'
 import GifItem from './GifItem'
 
@@ -13,6 +14,10 @@ const GifGrid = ({ category }) => {
       </div>
     </>
   )
+}
+
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired
 }
 
 export default GifGrid
