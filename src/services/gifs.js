@@ -1,5 +1,9 @@
+const apiKey = import.meta.env.VITE_API_KEY
+
+const limit = 10
+
 export const searchGifs = async (category) => {
-  const urlGiphy = `https://api.giphy.com/v1/gifs/search?api_key=SpG4R1GZJiqZHLp73PnAINQGFhVBYG93&q=${category}&limit=10`
+  const urlGiphy = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${category}&limit=${limit}`
 
   if (category === '') return null
 

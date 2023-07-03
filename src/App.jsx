@@ -15,7 +15,9 @@ const App = () => {
   return (
     <div>
       {/* Title */}
-      <h1>Gif Explorer</h1>
+      <div className='hero'>
+        <h1 className='title'>Gif Explorer</h1>
+      </div>
       {/* Input */}
       <Search onAddCategory={onAddCategory} />
       {/* Search List */}

@@ -1,6 +1,7 @@
 body {
     padding: 60px;
-    font-family: Helvetica, Arial, sans-serif;
+    padding-top: 10px;
+    font-family: 'Kanit';
     background-color: rgb(234, 234, 234);
 }
 
@@ -57,4 +58,25 @@ h3 {
 
 .card img {
     width: 100%;
+}
+
+.hero {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 900;
+    margin: 10px;
+    background-image: url(./img/guts.jpg);
+    background-size: 70%;
+    background-position: 50% 30%;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
