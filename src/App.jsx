@@ -16,7 +16,7 @@ const App = () => {
     <div>
       {/* Title */}
       <div className='hero'>
-        <h1 className='title' style={{ backgroundImage: 'url("/src/img/guts.jpg")' }}>Gif Explorer</h1>
+        <h1 className='title'>Gif Explorer</h1>
       </div>
       {/* Input */}
       <Search onAddCategory={onAddCategory} />
